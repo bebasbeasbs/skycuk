@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "dapurspl" --password-stdin
-        docker image build -t us-east1-docker.pkg.dev/qwiklabs-gcp-04-46330666a515/proz/mod:1 .
-        docker push us-east1-docker.pkg.dev/qwiklabs-gcp-04-46330666a515/proz/mod:1
+        docker image build -t dapurspl/skycuk:latest .
+        docker push dapurspl/skycuk:latest
